@@ -35,10 +35,3 @@ class Room extends Model {
 
 
 }
-
-
-
-create
-getById
-update
-delete
