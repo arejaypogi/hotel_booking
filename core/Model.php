@@ -7,7 +7,7 @@ class Model {
 
     public function __construct() {
         $database = new Database();
-        $this->db = $daabase->connect();
+        $this->db = $database->connect();
     }
 }
 

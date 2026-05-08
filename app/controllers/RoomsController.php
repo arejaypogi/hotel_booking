@@ -17,7 +17,7 @@ class RoomsController extends controller {
     }
 
     public function store() {
-        $room = new room();
+        $room = new Room();
 
         $room->create(
             $_POST['name'],
@@ -36,7 +36,7 @@ class RoomsController extends controller {
     }
 
     public function update() {
-        $room = new room();
+        $room = new Room();
 
         $room->update(
             $_POST['id'],

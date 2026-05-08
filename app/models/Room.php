@@ -21,8 +21,8 @@ class Room extends Model {
         return $stmt->get_result()->fetch_assoc();
     }
 
-    public function update($id, $name, $price, $capcity) {
-        $stmt = $this->db->prepare("UPDATE rooms SET name = ?, price = ?, capacity = ? WHERE id = ?)");
+    public function update($id, $name, $price, $capacity) {
+        $stmt = $this->db->prepare("UPDATE rooms SET name = ?, price = ?, capacity = ? WHERE id = ?");
         $stmt->bind_param("sdii", $name, $price, $capacity, $id);
         return $stmt->execute();
     }
